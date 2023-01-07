@@ -15,7 +15,6 @@
     min-height: 525px;
     width: 75%;
 }
-
 /* Form input styles */
 .form-control-plaintext,
 .contact__input {
@@ -32,7 +31,6 @@
     transition: all 0.2s ease-in-out;
     min-height: fit-content;
 }
-
 /* Form input hover and focus styles */
 .form-control-plaintext:hover,
 .contact__input:hover,
@@ -42,7 +40,6 @@
     border: 1px solid rgba(255, 255, 255, 0.25);
     background-color: transparent;
 }
-
 /* Headings styles */
 h2 {
     font-size: 5rem;
@@ -50,7 +47,6 @@ h2 {
     -moz-transition: all .5s ease;
     transition: all .5s ease;
 }
-
 /* Large screen headings styles */
 @media (min-width:769px) {
     h2 {
@@ -58,21 +54,18 @@ h2 {
         margin-bottom: 1rem;
     }
 }
-
 /* Larger screen headings styles */
 @media (min-width:850px) {
     h2 {
         margin-bottom: 1rem;
     }
 }
-
 /* Price title heading styles */
 .pricetitle h2 {
     cursor: default;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom-right-radius: 25%;
 }
-
 /* Nav item styles */
 .contact-nav {
     padding: 0;
@@ -82,18 +75,15 @@ h2 {
     list-style: none;
     display: inline-block;
 }
-
 /* Show div styles */
 .showDiv {
     background-color: transparent;
     border: none;
 }
-
 /* Show div heading styles */
 .showDiv h5 {
     color: #251f1f;
 }
-
 /* Nav item heading styles */
 h5 {
     color: rgba(37, 31, 31, 0.5);
@@ -108,10 +98,8 @@ h5 {
     border-radius: 0%;
     transition: .20s all ease;
 }
-
 /* Form row styles */
 .form-row > *{
     padding-bottom: 0.5rem;
 }
-
  
