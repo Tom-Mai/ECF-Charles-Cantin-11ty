@@ -1,0 +1,20 @@
+{
+  "name": "ecf-charles-cantin-11ty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tom-Mai/ECF-Charles-Cantin-11ty.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tom-Mai/ECF-Charles-Cantin-11ty/issues"
+  },
+  "homepage": "https://github.com/Tom-Mai/ECF-Charles-Cantin-11ty#readme"
+}
