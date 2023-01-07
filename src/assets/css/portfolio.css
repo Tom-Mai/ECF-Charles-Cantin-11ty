@@ -1,0 +1,83 @@
+/* Styles pour les titres */
+h2 {
+    /* Taille de police des titres */
+    font-size: 5rem;
+    /* Transition de style pour les titres */
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  
+  /* Styles pour les titres dans la section "photo" */
+  .photoh2 h2 {
+    /* Curseur par défaut pour les titres dans la section "photo" */
+    cursor: default;
+  }
+  
+  /* Media queries */
+  
+  /* Styles pour les titres sur écrans de grande taille */
+  @media (min-width: 769px) {
+    h2 {
+      /* Taille de police des titres sur écrans de grande taille */
+      font-size: 10rem;
+      /* Marge inférieure des titres sur écrans de grande taille */
+      margin-bottom: 1rem;
+    }
+    /* Styles pour les titres dans la section "photo" sur écrans de grande taille */
+    .photoh2 h2 {
+      /* Bordure inférieure des titres dans la section "photo" sur écrans de grande taille */
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      /* Rayon inférieur droit des titres dans la section "photo" sur écrans de grande taille */
+      border-bottom-right-radius: 25%;
+    }
+  }
+  
+  /* Styles pour les titres sur écrans de taille moyenne */
+  @media (min-width: 850px) {
+    h2 {
+      /* Marge inférieure des titres sur écrans de taille moyenne */
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* Styles pour les boutons */
+  .btn {
+    /* Transition de style pour les boutons */
+    transition: .5 all ease-in-out;
+  }
+  
+  /* Styles pour les boutons au survol */
+  .container-btn .btn:hover {
+    /* Transformations de style pour les boutons au survol */
+    transform: scale(1.1);
+    /* Couleur de fond pour les boutons au survol */
+    background-color: #DCDCDC;
+  }
+  
+  /* Styles pour les boutons au focus */
+  .container-btn .btn:focus {
+    /* Couleur de fond pour les boutons au focus */
+    background-color: #DCDCDC;
+  }
+  
+  /* Styles pour les boutons au clic */
+  .btn:active, .btn:focus {
+    /* Suppression de la bordure pour les boutons au clic */
+    border: none;
+  }
+  
+  .enlarge {
+    display: block;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: auto;
+    max-height: 90%;
+    z-index: 20;
+    }
+
+   
