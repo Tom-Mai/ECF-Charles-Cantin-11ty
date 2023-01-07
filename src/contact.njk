@@ -1,0 +1,121 @@
+--- 
+styles:
+        - /assets/css/contact.css
+layout: layout.njk
+title:  Contact
+script : "form.js"
+---
+
+  <div class="container mt-5">
+    <div class="pricetitle row text-center">
+      <h2>CONTACT</h2>
+      <nav aria-label="breadcrumb">
+        <ul class="breadcrumb justify-content-center">
+          <li class="breadcrumb-item"><a href="../HTML/homepage.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="../HTML/portfolio.html">Portfolio</a></li>
+          <li class="breadcrumb-item"><a href="../HTML/pricepage.html">Tarifs</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Contact</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- Main content -->
+  <div class="container shadow-lg formcontainer">
+    <form action="https://formspree.io/f/meqdbbdy" method="POST" id="form-contact" name="form-contact" class="form-contact">
+      <div class="contact-nav">
+        <h5 class="contact-nav__item">
+          Me contacter
+        </h5>
+      </div>
+      <div class="form-row">
+        <div class="col">
+          <label class="contact__label" for="nameInput">Nom</label>
+          <input  type="text" name="name" required class="form-control-plaintext contact__input" id="nameInput" />
+        </div>
+      </div>
+      <div class="form-row">
+      <div class="col ">
+        <label class="contact__label" for="firstnameInput">Prénom</label>
+        <input type="text" required class="form-control-plaintext contact__input" id="firstnameInput" />
+      </div>
+    </div>
+      <div class="form-row">
+        <div class="col">
+          <label class="contact__label" for="emailInput">Adresse mail</label>
+          <input type="email" class="form-control-plaintext contact__input" id="emailInput"  />
+        </div>
+        <div class="col">
+          <label class="contact__label" for="phoneInput">Phone</label>
+          <input type="tel" required class="form-control-plaintext contact__input" id="phoneInput"  />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col">
+          <div class="form-check-plaintext">
+            <label class="form-check-label me-4 align-middle" for="gridCheck1">J'ai déjà choisis un tarifs</label>
+            <input type="checkbox" id="gridCheck1" onclick="displayChecked()" class="form-check-input align-middle" />
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col">
+          <label class="sr-only" for="inputPrice">Tarifs</label>
+          <select name="tarifs" id="inputPrice" class="form-control-plaintext">
+            <option value="option">Juste moi</option>
+            <option value="option1">Famille</option>
+            <option value="option2">Il était une fois</option>
+            <option value="option3">Mon bébé</option>
+            <option value="option4">J'immortalise l'événement</option>
+          </select>
+          <div id="option" class="card showDiv" style="display: none">
+            <div class="card-body">
+              <h5 class="card-title">Juste moi</h5>
+              <p class="card-text">
+                Séance pour une personne, en extérieur ou en studio.
+              </p>
+            </div>
+          </div>
+          <div id="option1" class="card showDiv" style="display: none">
+            <div class="card-body">
+              <h5 class="card-title">Famille</h5>
+              <p class="card-text">
+                Pour la famille ou les amis jusqu’à 4 personnes, en extérieur
+                ou en studio 30 euros en supplément par personne au-delà de 4
+                (hormis enfant jusqu’à 2 ans).
+              </p>
+            </div>
+          </div>
+          <div id="option2" class="card showDiv" style="display: none">
+            <div class="card-body">
+              <h5 class="card-title">Il était une fois</h5>
+              <p class="card-text">
+                Photo de grossesse (À votre domicile, en extérieur ou en studio).
+              </p>
+            </div>
+          </div>
+          <div id="option3" class="card showDiv" style="display: none">
+            <div class="card-body">
+              <h5 class="card-title">Mon bébé</h5>
+              <p class="card-text">Photo d’enfant jusqu’à 3 ans (photo à domicile).
+              </p>
+            </div>
+          </div>
+          <div id="option4" class="card showDiv" style="display: none">
+            <div class="card-body">
+              <h5 class="card-title">J'immortalise le moment</h5>
+              <p class="card-text">sur mesure Prestation de mariage ou baptême.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="commentaire" class="contact__label">commentaire</label>
+        <input form="form-contact" name="form-contact" autocomplete="" class="form-control-plaintext contact__input" id="commentaire" rows="6">
+      </div>
+      <button id="form-contact-button" class="btn">Submit</button>
+      <p id="my-form-status"></p>
+    </form>
+
+    
+  </div>
