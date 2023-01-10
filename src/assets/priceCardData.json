@@ -11,7 +11,7 @@
   {
     "id": 2,
     "category": "famille",
-    "img": "../images//family/family1.jpg",
+    "img": "/assets/images/couple/couple2.jpg",
     "alt": "family picture",
     "title": "Famille",
     "description": "Pour la famille ou les amis jusqu’à 4 personnes, en extérieur ou en studio 30 euros en supplément par personne au-delà de 4 (hormis enfant jusqu’à 2 ans).",
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "category": "Grossesse",
-    "img": "../images/grossesse/grossesse1.jpg",
+    "img": "/assets/images/grossesse/grossesse1.jpg",
     "alt": "Pregnant picture",
     "title": "Il était une fois",
     "description": "Photo de grossesse (À votre domicile, en extérieur ou en studio).",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "category": "bebe",
-    "img": "../images/bebe/bebe1.jpg",
+    "img": "/assets/images/bebe/bebe1.jpg",
     "alt": "baby picture",
     "title": "Mon bébé",
     "description": "Photo d’enfant jusqu’à 3 ans (photo à domicile).",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "category": "bapteme",
-    "img": "../images/bapteme/bapteme1.jpg",
+    "img": "/assets/images/bapteme/bapteme1.jpg",
     "alt": "bapteme picture",
     "title": "J'immortalise l'événement",
     "description": "sur mesure Prestation de mariage ou baptême.",
