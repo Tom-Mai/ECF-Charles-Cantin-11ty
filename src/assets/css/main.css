@@ -48,6 +48,7 @@ a:hover{
   bottom: 50px;
   right: 10px;
   display: none;
+  z-index: 999;
 }
 /* Button navbar-toggler */
 .navbar-toggler{
