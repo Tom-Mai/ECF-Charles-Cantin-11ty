@@ -43,5 +43,14 @@
     "title": "J'immortalise l'événement",
     "description": "sur mesure Prestation de mariage ou baptême.",
     "price": "150"
+  },
+  {
+    "id": 6,
+    "category": "duo",
+    "img": "/assets/images/couple/couple6.jpg",
+    "alt": "Photo en duo",
+    "title": "Pour deux",
+    "description": "Pour deux personnes, en extérieur ou en studio.",
+    "price": "195"
   }
 ]
