@@ -38,7 +38,7 @@ function displayPhotoItems(displayItems) {
   let displayPhoto = displayItems.map(function (item) {
     return `<div class="col-photo col d-flex justify-content-center">
     <div class="card border border-0 shadow h-25 w-75">
-      <img src="${item.img}" class="card-img" alt="${item.alt}">
+      <img src="${item.img}" class="card-img" alt="${item.alt}" loading="lazy">
     </div>
   </div>`;
 
