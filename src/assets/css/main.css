@@ -27,7 +27,7 @@ p , a, .btn, li, h3 {
     font-size: 1.5rem;
 }
 a:hover{
-    color: black;
+    color: var(--typo-color);
     transform: scale(1.1);
 }
 .footer{
@@ -36,7 +36,7 @@ a:hover{
     align-items: center;
     justify-content: space-around;
     padding: 0;
-    background-color: #251f1f;
+    background-color: var(--bs-navbar-color);
     margin-top: 10em;    
 }
 .footer p {
