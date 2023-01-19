@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/Tom-Mai/ECF-Charles-Cantin-11ty#readme",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.2"
+    "@11ty/eleventy": "^1.0.2",
+    "forestry-admin": "^4.0.0",
+    "forestry-collections": "^4.0.0"
   }
 }
