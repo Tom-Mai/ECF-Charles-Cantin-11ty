@@ -4,7 +4,8 @@ module.exports = function(eleventyConfig) {
     // Clone the config object in public folder
 
     eleventyConfig.addPassthroughCopy("./src/assets");
-    eleventyConfig.addPassthroughCopy("./src/uploads");
+    eleventyConfig.addPassthroughCopy("./src/config.js");
+
 
     return {
       dir: {
