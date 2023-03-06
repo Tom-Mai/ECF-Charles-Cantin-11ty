@@ -5,13 +5,14 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("./src/assets");
     eleventyConfig.addPassthroughCopy("./src/config.js");
+    eleventyConfig.addPassthroughCopy('./src/admin');
 
 
     return {
       dir: {
         // Define the input & output folder
           input: "src",
-          output: "public"
+          output: "_site"
       }
     }
 };
