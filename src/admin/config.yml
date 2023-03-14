@@ -8,7 +8,7 @@ publish_mode: editorial_workflow
 
 local_backend: true
 # change url to a link to the image you want to use, no file paths, must be a URL
-logo_url: https://github.com/Tom-Mai/ECF-Charles-Cantin-11ty/blob/a31451d7f3175ba28ed1c942bfa78c8626bfd041/src/assets/images/logo/logo-fb.png
+logo_url: https://raw.githubusercontent.com/Tom-Mai/ECF-Charles-Cantin-11ty/main/src/assets/images/logo_admin.png
 # This line should *not* be indented
 media_folder: "public/images/uploads" # Media files will be stored in the repo under images/uploads
 public_folder: "/images/blog"
