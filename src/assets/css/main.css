@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 1vh;
-    color: var(--typo-color);
+
 }
 :root{
     --typo-color : #251f1f;
@@ -28,22 +28,24 @@ h1, h2{
 }
 .nav-item:not(:first-child) a.nav-link, 
 .nav-link:not(:first-child) {
-
     border-radius: 10%;
     text-decoration: none;
     list-style: none;
     color: var(--typo-color);
-    transition: all 1s ease-out;
+    transition: all 0.3s ease-out;
+    background-image: linear-gradient(to right, #dcdcdc 30%, transparent 50%);
+    background-position: -100%;
+    background-size: 200%;
 }
 
 .nav-item:not(:first-child) a.nav-link:hover,
 .nav-item:not(:first-child) a.nav-link:focus,
 .nav-link:not(:first-child):hover,
 .nav-link:not(:first-child):focus {
-    background-color: #251f1f;
-    color: #f2f2f2;
-}
 
+    background-position: 0%;
+    background-size: 300%;
+}
 a{
     text-decoration: none;
     list-style: none;
