@@ -1,6 +1,12 @@
 backend:
   name: git-gateway
   branch: main
+  repo: Tom-Mai/ECF-Charles-Cantin-11ty
+  auth_provider:
+    name: github
+    config:
+      client_id: your-github-client-id
+      client_secret: your-github-client-secret
 
   # This line should *not* be indented
 publish_mode: editorial_workflow
@@ -22,3 +28,26 @@ collections:
     - { name: 'title', label: 'Titre', widget: 'string'}
     - { name: 'image', label: 'Image', widget: 'image'}
     - { name: 'category', label: 'Catégorie', widget: 'string'}
+        # Set up roles with specific permissions
+    # The following example restricts access to the photo collection to users with the "editor" role
+    # Editors can create and edit photos, but not delete them
+    # Contributors can only create new photos
+    # Viewers can only view existing photos
+    # Other users will not have access to the photo collection at all
+    # Each role is defined as a separate object within the collection definition
+    # Users can be assigned to roles using the Netlify Identity UI
+    roles:
+      - name: editor
+        description: Can create and edit photos
+        permissions:
+          - create
+          - read
+          - update
+      - name: contributor
+        description: Can create new photos
+        permissions:
+          - create
+      - name: viewer
+        description: Can view existing photos
+        permissions:
+          - read
