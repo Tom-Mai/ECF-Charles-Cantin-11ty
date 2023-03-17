@@ -17,7 +17,7 @@ local_backend: true
 logo_url: https://raw.githubusercontent.com/Tom-Mai/ECF-Charles-Cantin-11ty/main/src/assets/images/logo_admin.png
 # This line should *not* be indented
 media_folder: "public/images/uploads" # Media files will be stored in the repo under images/uploads
-public_folder: "/images/uploads" # Public files will be stored in the repo under images/uploads
+public_folder: "/images/uploads" 
 
 collections:
   - name: "photo"
@@ -28,6 +28,3 @@ collections:
     - { name: 'title', label: 'Titre', widget: 'string'}
     - { name: 'image', label: 'Image', widget: 'image', media_library: { config: { public_folder: \public\images\uploads" }}}
     - { name: 'category', label: 'Catégorie', widget: 'string'}
-
-images/blog
-
