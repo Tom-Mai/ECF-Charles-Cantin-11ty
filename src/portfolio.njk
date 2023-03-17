@@ -31,7 +31,7 @@ styles:
         <div class="col-photo col d-flex justify-content-center">
           <div class="card border border-0 shadow h-25 w-75">
             <img 
-            src="{{ photo.data.image}}" 
+            src="{{ photo.data.image | url }}" 
             class="card-img" 
             alt="{{ photo.data.title }}" 
             loading="lazy">
