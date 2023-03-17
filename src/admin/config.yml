@@ -16,8 +16,8 @@ local_backend: true
 # change url to a link to the image you want to use, no file paths, must be a URL
 logo_url: https://raw.githubusercontent.com/Tom-Mai/ECF-Charles-Cantin-11ty/main/src/assets/images/logo_admin.png
 # This line should *not* be indented
-media_folder: "public/images/uploads" # Media files will be stored in the repo under images/uploads
-public_folder: "/images/uploads" 
+media_folder: "_site/images/uploads" # Media files will be stored in the repo under images/uploads
+public_folder: "/images/uploads" # Public files will be stored in the repo under public/images/uploads
 
 collections:
   - name: "photo"
@@ -26,5 +26,5 @@ collections:
     create: true
     fields:
     - { name: 'title', label: 'Titre', widget: 'string'}
-    - { name: 'image', label: 'Image', widget: 'image', media_library: { config: { public_folder: \public\images\uploads" }}}
+    - { name: 'image', label: 'Image', widget: 'image', media_library: { config: { public_folder: "/images/uploads" }}}
     - { name: 'category', label: 'Catégorie', widget: 'string'}
