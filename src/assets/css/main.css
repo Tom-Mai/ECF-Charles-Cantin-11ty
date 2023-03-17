@@ -18,7 +18,9 @@ body, html {
 h1, h2{
     font-family:'Flamenco', cursive;
 }
-
+.nav-item{
+    text-transform:uppercase;
+}
 .nav-item:first-child a.nav-link {
     transition: all 1s ease-out;
 }
@@ -42,7 +44,7 @@ h1, h2{
 .nav-item:not(:first-child) a.nav-link:focus,
 .nav-link:not(:first-child):hover,
 .nav-link:not(:first-child):focus {
-
+    /* color:#f2f2f2; */
     background-position: 0%;
     background-size: 300%;
 }
