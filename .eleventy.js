@@ -56,7 +56,9 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/assets");
     eleventyConfig.addPassthroughCopy("./src/config.js");
     eleventyConfig.addPassthroughCopy('./src/admin');
+    eleventyConfig.addPassthroughCopy("public");
 
+    eleventyConfig.addIgnore("src/Photos");
 
     return {
       dir: {
