@@ -56,7 +56,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/assets");
     eleventyConfig.addPassthroughCopy("./src/config.js");
     eleventyConfig.addPassthroughCopy('./src/admin');
-    eleventyConfig.addPassthroughCopy("public");
     // ignorer les fichiers .md dans src/Photos
     eleventyConfig.ignores.add("src/Photos/**/*.md");
 
