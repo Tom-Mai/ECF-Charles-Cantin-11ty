@@ -13,7 +13,7 @@ public_folder: "/images/photo"
 
 collections:
   - name: "photo"
-    label: "Photos"
+    label: "photos"
     folder: "src/photo"
     create: true
     fields:
