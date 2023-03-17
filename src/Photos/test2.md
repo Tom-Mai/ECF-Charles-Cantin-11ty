@@ -1,5 +1,5 @@
 ---
-title: test2
+title: Adeline *
 image: /images/blog/ad-view1.jpg
 category: Baptême
 ---
