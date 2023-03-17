@@ -8,15 +8,15 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: "_site\images\Photos"
-public_folder: "/images/Photos"
+media_folder: "public\images\photo"
+public_folder: "/images/photo"
 
 collections:
   - name: "photo"
     label: "Photos"
-    folder: "src/Photos"
+    folder: "src/photo"
     create: true
     fields:
     - { name: 'title', label: 'Titre', widget: 'string'}
-    - { name: 'image', label: 'Image', widget: 'image', media_library: { config: { public_folder: "/images/Photos" }}}
+    - { name: 'image', label: 'Image', widget: 'image'}
     - { name: 'category', label: 'Catégorie', widget: 'string'}
