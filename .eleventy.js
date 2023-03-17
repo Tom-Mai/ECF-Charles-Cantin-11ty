@@ -10,7 +10,7 @@ module.exports = function(eleventyConfig) {
       dir: {
         // Define the input & output folder
           input: "src",
-          output: "_site"
+          output: "public"
       },
     };
 };
