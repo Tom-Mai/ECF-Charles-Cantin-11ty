@@ -3,7 +3,6 @@ layout : layout.njk
 title : Portfolio
 styles:
         - /assets/css/portfolio.css
-script : "portfolio.js"
 ---
 
 
@@ -27,6 +26,13 @@ script : "portfolio.js"
   <!-- container ITEMS -->
   <div class="container mt-5 pb-5">
     <div class="row maincontent row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 mx-5 pt5">
-      <!-- single ITEM -->
+            {% for photo in collections.photo %}
+        <div class="col-photo col d-flex justify-content-center">
+          <div class="card border border-0 shadow h-25 w-75">
+            <img src="{{photo.image | url}}" class="card-img" alt="{{photo.title}}" loading="lazy">
+
+          </div>
+        </div>
+      {% endfor %}
     </div>
   </div>
