@@ -1,5 +1,5 @@
 ---
-title: batpeme
+title: Photo de baptême
 image: /images/uploads/bapteme1.jpg
-category: Bapteme
+category: Baptême
 ---
