@@ -17,7 +17,7 @@ local_backend: true
 logo_url: https://raw.githubusercontent.com/Tom-Mai/ECF-Charles-Cantin-11ty/main/src/assets/images/logo_admin.png
 # This line should *not* be indented
 media_folder: "public/images/uploads" # Media files will be stored in the repo under images/uploads
-public_folder: "/images/blog"
+public_folder: "/images/uploads" # Public files will be stored in the repo under images/uploads
 
 collections:
   - name: "photo"
@@ -26,28 +26,8 @@ collections:
     create: true
     fields:
     - { name: 'title', label: 'Titre', widget: 'string'}
-    - { name: 'image', label: 'Image', widget: 'image'}
+    - { name: 'image', label: 'Image', widget: 'image', media_library: { config: { public_folder: \public\images\uploads" }}}
     - { name: 'category', label: 'Catégorie', widget: 'string'}
-        # Set up roles with specific permissions
-    # The following example restricts access to the photo collection to users with the "editor" role
-    # Editors can create and edit photos, but not delete them
-    # Contributors can only create new photos
-    # Viewers can only view existing photos
-    # Other users will not have access to the photo collection at all
-    # Each role is defined as a separate object within the collection definition
-    # Users can be assigned to roles using the Netlify Identity UI
-    roles:
-      - name: editor
-        description: Can create and edit photos
-        permissions:
-          - create
-          - read
-          - update
-      - name: contributor
-        description: Can create new photos
-        permissions:
-          - create
-      - name: viewer
-        description: Can view existing photos
-        permissions:
-          - read
+
+images/blog
+
