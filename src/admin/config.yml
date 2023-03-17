@@ -4,20 +4,12 @@ backend:
   repo: Tom-Mai/ECF-Charles-Cantin-11ty
   auth_provider:
     name: github
-    config:
-      client_id: your-github-client-id
-      client_secret: your-github-client-secret
 
-  # This line should *not* be indented
+
 publish_mode: editorial_workflow
-# This line should *not* be indented
 
-local_backend: true
-# change url to a link to the image you want to use, no file paths, must be a URL
-logo_url: https://raw.githubusercontent.com/Tom-Mai/ECF-Charles-Cantin-11ty/main/src/assets/images/logo_admin.png
-# This line should *not* be indented
-media_folder: "_site/images/uploads" # Media files will be stored in the repo under images/uploads
-public_folder: "/images/uploads" # Public files will be stored in the repo under public/images/uploads
+media_folder: "src/images/Photos"
+public_folder: "/images/Photos"
 
 collections:
   - name: "photo"
@@ -26,5 +18,5 @@ collections:
     create: true
     fields:
     - { name: 'title', label: 'Titre', widget: 'string'}
-    - { name: 'image', label: 'Image', widget: 'image', media_library: { config: { public_folder: "/images/uploads" }}}
+    - { name: 'image', label: 'Image', widget: 'image', media_library: { config: { public_folder: "/images/Photos" }}}
     - { name: 'category', label: 'Catégorie', widget: 'string'}
