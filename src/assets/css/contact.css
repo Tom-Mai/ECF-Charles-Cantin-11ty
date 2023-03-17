@@ -2,32 +2,23 @@
 .formcontainer {
     height: fit-content;
     margin-top: 25vh;
-    /* Form container background image */
-    background-image: url(/assets/photos/bgHome.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* Form container dimensions and layout */
-    z-index: 0;
     margin-top: 4rem;
-    padding: 5rem 4rem 0 4rem;
     width: 100%;
-    max-width: 525px;
-    min-height: 525px;
-    width: 75%;
+    max-width: 100%;
 }
+
 /* Form input styles */
 .form-control-plaintext,
 .contact__input {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.3);
     color: rgba(37, 31, 31, 0.5);
-    font-size: 1.15rem;
+    font-size: 2rem;
     width: 100%;
     padding: .5rem 1rem;
-    border: 2px solid transparent;
     outline: none;
     border-radius: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.25);
-    letter-spacing: 1px;
+    background-color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.25em;
     transition: all 0.2s ease-in-out;
     min-height: fit-content;
 }
@@ -37,8 +28,7 @@
 .form-control-plaintext:focus,
 .contact__input:focus {
     text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 1);
 }
 /* Headings styles */
 h2 {
@@ -100,6 +90,6 @@ h5 {
 }
 /* Form row styles */
 .form-row > *{
-    padding-bottom: 0.5rem;
+    padding-bottom: 2em;
 }
  
