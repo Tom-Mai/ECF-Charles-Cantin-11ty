@@ -18,6 +18,6 @@ collections:
     create: true
     slug: '{{pageName}}'
     fields:
-    - {label: 'Titre', name: 'image', widget: 'string'}
-    - {label: 'Image', name: 'image', widget: 'image'}
-    - {label: 'Catégorie', name: 'category', widget: 'string'}
+    - { label: 'Image Caption', name: 'imageAlt', widget: 'string' }
+    - { label: 'Featured Image', name: 'image', widget: 'image' }
+    - { label: 'Catégorie', name: 'category', widget: 'string' }
