@@ -8,8 +8,8 @@ backend:
 local_backend: true
 
 logo_url: https://github.com/Tom-Mai/ECF-Charles-Cantin-11ty/blob/cde433a3a45ff14504c00914389ddcd39c3bef9c/src/assets/images/logo_admin.png?raw=true
-media_folder: 'public/images/photo'
-public_folder: '/images/photo'
+media_folder: 'public/image/photo'
+public_folder: '/image/photo'
 
 collections:
   - name: 'photo'
