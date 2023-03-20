@@ -25,7 +25,9 @@ script : "portfolio.js"
       {%- for post in collections.post -%}
       <button 
       type="button" 
-      class="btn btn-primary-outline filter-btn me-sm-3 me-md-4 w-auto" data-id="{{ post.data.category }}">{{ post.data.category }}
+      class="btn btn-primary-outline filter-btn me-sm-3 me-md-4 w-auto" 
+      data-id="{{ post.data.category }}">
+      {{ post.data.category }}
       </button>
       {%- endfor -%}
     </div>
@@ -34,17 +36,17 @@ script : "portfolio.js"
   <div class="container mt-5 pb-5">
     <div class="row maincontent row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 mx-5 pt5">
             
-      {%- for post in collections.post -%}
-        <div class="col-photo col d-flex justify-content-center">
-          <div class="card border border-0 shadow h-25 w-75">
-            <img 
-            src="{{ post.data.image }}" 
-            class="card-img" 
-            alt="{{ post.data.imageAlt }}" 
-            loading="lazy">
+{%- for post in collections.post -%}
+  <div class="col-photo col d-flex justify-content-center" data-category="{{ post.data.category }}">
+    <div class="card border border-0 shadow h-25 w-75">
+      <img 
+      src="{{ post.data.image }}" 
+      class="card-img" 
+      alt="{{ post.data.imageAlt }}" 
+      loading="lazy">
+    </div>
+  </div>
+{%- endfor -%}
 
-          </div>
-        </div>
-      {%- endfor -%}
     </div>
   </div>
