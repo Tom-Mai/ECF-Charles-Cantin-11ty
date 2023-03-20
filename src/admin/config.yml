@@ -7,8 +7,7 @@ backend:
 
 local_backend: true
 
-logo_url: https://raw.githubusercontent.com/Tom-Mai/ECF-Charles-Cantin-11ty/main/src/assets/images/logo_admin.pngpublish_mode: editorial_workflow
-
+logo_url: https://github.com/Tom-Mai/ECF-Charles-Cantin-11ty/blob/cde433a3a45ff14504c00914389ddcd39c3bef9c/src/assets/images/logo_admin.png
 media_folder: "public/images/photo"
 public_folder: "/images/photo"
 
