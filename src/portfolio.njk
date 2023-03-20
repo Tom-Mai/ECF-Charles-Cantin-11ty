@@ -21,6 +21,12 @@ styles:
   <div class="container mt-5 pb-5 d-flex justify-content-center">
     <div class="container-btn row row-cols-3 row-cols-md-1 justify-content-center pb-5 w-75">
       <!-- filter buttons -->
+      {%- for post in collections.post -%}
+      <button 
+      type="button" 
+      class="btn btn-primary-outline filter-btn me-sm-3 me-md-4 w-auto" data-id="{{ post.data.category }}">{{ post.data.category }}
+      </button>
+      {%- endfor -%}
     </div>
   </div>
   <!-- container ITEMS -->
