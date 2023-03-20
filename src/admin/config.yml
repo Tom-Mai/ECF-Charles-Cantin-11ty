@@ -8,16 +8,34 @@ backend:
 local_backend: true
 
 logo_url: https://github.com/Tom-Mai/ECF-Charles-Cantin-11ty/blob/cde433a3a45ff14504c00914389ddcd39c3bef9c/src/assets/images/logo_admin.png?raw=true
-media_folder: "public/images/photo"
-public_folder: "/images/photo"
+media_folder: 'public/images/photo'
+public_folder: '/images/photo'
 
 collections:
-  - name: "photo"
-    label: "photos"
-    folder: "src/photo"
+  - name: 'photo'
+    label: 'photos'
+    folder: 'src/photo'
     create: true
     slug: '{{pageName}}'
     fields:
     - { label: 'Image Caption', name: 'imageAlt', widget: 'string' }
     - { label: 'Featured Image', name: 'image', widget: 'image' }
     - { label: 'Catégorie', name: 'category', widget: 'string' }
+
+
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'src/blog'
+    create: true
+    slug: '{{pageName}}'
+    fields:
+      - { label: 'Page-Name-with-dashes-only', name: 'pageName', widget: 'string' }
+      - { label: 'Blog Title', name: 'blogTitle', widget: 'string' }
+      - { label: 'Title Tag', name: 'titleTag', widget: 'string' }
+      - { label: 'Description', name: 'blogDescription', widget: 'string' }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Tags', name: 'tags', widget: 'list', default: ['post'] }
+      - { label: 'Featured Image', name: 'image', widget: 'image' }
+      - { label: 'Image Caption', name: 'imageAlt', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
