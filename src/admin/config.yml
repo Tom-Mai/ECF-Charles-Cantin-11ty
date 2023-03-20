@@ -5,6 +5,8 @@ backend:
   auth_provider:
     name: github
 
+local_backend: true
+
 logo_url: https://raw.githubusercontent.com/Tom-Mai/ECF-Charles-Cantin-11ty/main/src/assets/images/logo_admin.pngpublish_mode: editorial_workflow
 
 media_folder: "public/images/photo"
