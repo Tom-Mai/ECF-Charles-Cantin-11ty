@@ -40,3 +40,13 @@ img{
     bottom: 0;
     width: 100%
 }
+.hide {
+    opacity: 0;
+    transform: translatey(-90px);
+}
+
+.appear {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 5s;
+}
