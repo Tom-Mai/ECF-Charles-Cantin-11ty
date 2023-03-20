@@ -16,7 +16,6 @@ collections:
     label: "photos"
     folder: "src/photo"
     create: true
-    slug: '{{pageName}}'
     fields:
     - { label: 'Image Caption', name: 'imageAlt', widget: 'string' }
     - { label: 'Featured Image', name: 'image', widget: 'image' }
