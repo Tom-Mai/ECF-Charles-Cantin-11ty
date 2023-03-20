@@ -3,11 +3,11 @@ layout : layout.njk
 title : Portfolio
 styles:
         - /assets/css/portfolio.css
-script : "portfolio.js"
+script : "portfolio.js" 
 ---
 
 <div class="container mt-5">
-    <div class="photoh2 row text-center">
+    <div class="photoh2 row text-center hideleft">
       <h2>PORTFOLIO</h2>
       <nav aria-label="breadcrumb">
         <ul class="breadcrumb justify-content-center">
@@ -18,11 +18,11 @@ script : "portfolio.js"
     </div>
   </div>
   <div class="container mt-5 pb-5 d-flex justify-content-center">
-    <div class="container-btn row row-cols-3 row-cols-md-1 justify-content-center pb-5 w-75">
+    <div class="container-btn row row-cols-3 row-cols-md-1 justify-content-center pb-5 w-75 hideright">
       <!-- filter buttons -->
       <button 
       type="button" 
-      class="btn btn-primary-outline filter-btn me-sm-3 me-md-4 w-auto" 
+      class="btn btn-primary-outline filter-btn me-sm-3 me-md-4 w-auto " 
       data-id="all">
       All
       </button>
@@ -45,7 +45,7 @@ script : "portfolio.js"
     <div class="row maincontent row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 mx-5 pt5">
             
 {%- for post in collections.post -%}
-  <div class="col-photo col d-flex justify-content-center" data-category="{{ post.data.category }}">
+  <div class="col-photo col d-flex justify-content-center  hideright" data-category="{{ post.data.category }}">
     <div class="card border border-0 shadow h-25 w-75">
       <img 
       src="{{ post.data.image }}" 
