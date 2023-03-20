@@ -1,12 +1,10 @@
---- 
+---
 layout : layout.njk
 title : Portfolio
 styles:
         - /assets/css/portfolio.css
 script : "portfolio.js"
 ---
-
-
 
 <div class="container mt-5">
     <div class="photoh2 row text-center">
@@ -22,13 +20,23 @@ script : "portfolio.js"
   <div class="container mt-5 pb-5 d-flex justify-content-center">
     <div class="container-btn row row-cols-3 row-cols-md-1 justify-content-center pb-5 w-75">
       <!-- filter buttons -->
-      {%- for post in collections.post -%}
       <button 
       type="button" 
       class="btn btn-primary-outline filter-btn me-sm-3 me-md-4 w-auto" 
-      data-id="{{ post.data.category }}">
-      {{ post.data.category }}
+      data-id="all">
+      All
       </button>
+      {%- set categories = [] -%}
+      {%- for post in collections.post -%}
+        {%- if post.data.category not in categories -%}
+          {%- set categories = categories.concat(post.data.category) -%}
+          <button 
+          type="button" 
+          class="btn btn-primary-outline filter-btn me-sm-3 me-md-4 w-auto" 
+          data-id="{{ post.data.category }}">
+          {{ post.data.category }}
+          </button>
+        {%- endif -%}
       {%- endfor -%}
     </div>
   </div>

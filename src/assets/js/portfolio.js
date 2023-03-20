@@ -1,28 +1,19 @@
-
-// Sélection des éléments du DOM
-const filterButtons = document.querySelectorAll(".filter-btn");
-const photoItems = document.querySelectorAll(".col-photo");
-
-// Fonction pour filtrer les photos en fonction de la catégorie sélectionnée
-function filterPhotos(category) {
-  photoItems.forEach((photoItem) => {
-    const photoCategory = photoItem.getAttribute("data-category");
-    if (category === "All" || photoCategory === category) {
-      photoItem.style.display = "block";
-    } else {
-      photoItem.style.display = "none";
-    }
+document.addEventListener("DOMContentLoaded", () => {
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const items = document.querySelectorAll(".col-photo");
+  
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const category = button.dataset.id;
+  
+        items.forEach((item) => {
+          if (category === "all" || item.dataset.category === category) {
+            item.classList.remove("d-none");
+          } else {
+            item.classList.add("d-none");
+          }
+        });
+      });
+    });
   });
-}
-
-// Ajout d'un écouteur d'événements sur chaque bouton pour gérer le filtrage
-filterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const category = button.dataset.id;
-    filterPhotos(category);
-  });
-});
-
-// Initialisation: Afficher toutes les photos au chargement de la page
-filterPhotos("All");
-
+  
