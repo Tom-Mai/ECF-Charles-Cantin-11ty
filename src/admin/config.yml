@@ -5,17 +5,17 @@ backend:
   auth_provider:
     name: github
 
+logo_url: https://raw.githubusercontent.com/Tom-Mai/ECF-Charles-Cantin-11ty/main/src/assets/images/logo_admin.pngpublish_mode: editorial_workflow
 
-publish_mode: editorial_workflow
-
-media_folder: "public/images/uploads"
-public_folder: "/images/uploads"
+media_folder: "public/images/photo"
+public_folder: "/images/photo"
 
 collections:
   - name: "photo"
     label: "photos"
     folder: "src/photo"
     create: true
+    slug: '{{pageName}}'
     fields:
     - { label: 'Image Caption', name: 'imageAlt', widget: 'string' }
     - { label: 'Featured Image', name: 'image', widget: 'image' }
