@@ -50,17 +50,16 @@ h2 {
   
   /* Modification de l'affichage, de l'alignement, de la scrollbar et de la largeur pour les éléments avec la classe "slides-container" pour les écrans de largeur supérieure ou égale à 700 pixels */
   @media (min-width: 700px) {
-    .slides-container {
-      display: flex;
-      justify-content: start;
-      overflow: scroll;
-      scroll-behavior: smooth;
-      padding: 0;
-      margin: 0;
-      width: 100%;
-      transition: all 0.5s ease;
-    }
-  
+.slides-container {
+  display: flex;
+  justify-content: start;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+}
     /* Modification de la largeur et de l'affichage pour les éléments avec la classe "maincontent" */
     .maincontent {
       width: 60vh;
@@ -101,3 +100,8 @@ h2 {
     border-radius: 0 2rem 2rem 0;
   }
   
+  /* SCROLLBAR */
+
+  .slides-container::-webkit-scrollbar {
+    width: 0px;
+  }
