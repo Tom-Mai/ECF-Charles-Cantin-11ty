@@ -136,11 +136,13 @@ p , a, .btn, li, h3 {
 
 .hideleft {
     opacity: 0;
-    transform: translatex(-90px);
+    transform: translatex(-3px);
+    overflow: hidden;
 }
 .hideright{
     opacity: 0;
-    transform: translatex(90px);
+    transform: translatex(3px);
+    overflow: hidden;
 }
 
 .appear {
