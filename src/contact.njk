@@ -109,9 +109,17 @@ script : "form.js"
           </div>
         </div>
       </div>
+     
       <div class="form-row">
-        <label for="commentaire" class="contact__label">commentaire</label>
-        <input form="form-contact" name="form-contact" autocomplete="" class="form-control-plaintext contact__input" id="commentaire" rows="6">
+        <label 
+          for="commentaire"
+          class="contact__label">Commentaire</label>
+        <textarea
+        rows="15" 
+        form="form-contact" 
+        name="form-contact" 
+        id="commentaire"
+        ></textarea>
       </div>
       <button id="form-contact-button" class="btn">Submit</button>
       <p id="my-form-status"></p>
