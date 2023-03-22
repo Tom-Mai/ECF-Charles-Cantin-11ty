@@ -78,6 +78,7 @@ h2 {
     width: 100%;
     z-index: 100;
     display: none;
+    margin-top: 0;
   }
 
   .container .enlarge span{
@@ -85,7 +86,7 @@ h2 {
     top: 0;
     right: 10px;
     font-size: 60px;
-    font-weight: bolder;
+    font-weight:lighter;
     color: #fff;
     cursor: pointer;
     z-index: 100;
