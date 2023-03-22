@@ -59,6 +59,8 @@ p , a, .btn, li, h3, label {
 }
 
 .footer{
+    position: relative;
+    bottom: 0;
     color: #f2f2f2;
     align-items: center;
     justify-content: space-around;
