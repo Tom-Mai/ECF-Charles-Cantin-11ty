@@ -53,7 +53,7 @@ a{
     list-style: none;
     color: var(--typo-color);
 }
-p , a, .btn, li, h3 {
+p , a, .btn, li, h3, label {
     font-family:'Raleway', sans-serif;
     font-size: 2rem;
 }
