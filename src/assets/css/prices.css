@@ -1,33 +1,33 @@
-/* Définition de la taille de police et de la transition pour les éléments h2 */
-h2 {
+/* Définition de la taille de police et de la transition pour les éléments h1 */
+h1 {
     font-size: 5rem;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
   
-  /* Ajout d'un style spécifique pour les éléments h2 avec la classe "pricetitle" */
-  .pricetitle h2 {
+  /* Ajout d'un style spécifique pour les éléments h1 avec la classe "pricetitle" */
+  .pricetitle h1 {
     cursor: default;
   }
   
-  /* Modification de la taille de police et de la marge en dessous des éléments h2 pour les écrans de largeur supérieure ou égale à 769 pixels */
+  /* Modification de la taille de police et de la marge en dessous des éléments h1 pour les écrans de largeur supérieure ou égale à 769 pixels */
   @media (min-width: 769px) {
-    h2 {
+    h1 {
       font-size: 10rem;
       margin-bottom: 1rem;
     }
   
-    /* Ajout d'un bord inférieur et d'un arrondi à droite en bas pour les éléments h2 avec la classe "pricetitle" */
-    .pricetitle h2 {
+    /* Ajout d'un bord inférieur et d'un arrondi à droite en bas pour les éléments h1 avec la classe "pricetitle" */
+    .pricetitle h1 {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
       border-bottom-right-radius: 25%;
     }
   }
   
-  /* Modification de la marge en dessous des éléments h2 pour les écrans de largeur supérieure ou égale à 850 pixels */
+  /* Modification de la marge en dessous des éléments h1 pour les écrans de largeur supérieure ou égale à 850 pixels */
   @media (min-width: 850px) {
-    h2 {
+    h1 {
       margin-bottom: 1rem;
     }
   }

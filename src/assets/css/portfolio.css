@@ -1,5 +1,5 @@
 /* Styles pour les titres */
-h2 {
+h1 {
     /* Taille de police des titres */
     font-size: 5rem;
     /* Transition de style pour les titres */
@@ -9,7 +9,7 @@ h2 {
   }
   
   /* Styles pour les titres dans la section "photo" */
-  .photoh2 h2 {
+  .photoh2 h1 {
     /* Curseur par défaut pour les titres dans la section "photo" */
     cursor: default;
   }
@@ -18,14 +18,14 @@ h2 {
   
   /* Styles pour les titres sur écrans de grande taille */
   @media (min-width: 769px) {
-    h2 {
+    h1 {
       /* Taille de police des titres sur écrans de grande taille */
       font-size: 10rem;
       /* Marge inférieure des titres sur écrans de grande taille */
       margin-bottom: 1rem;
     }
     /* Styles pour les titres dans la section "photo" sur écrans de grande taille */
-    .photoh2 h2 {
+    .photoh2 h1 {
       /* Bordure inférieure des titres dans la section "photo" sur écrans de grande taille */
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
       /* Rayon inférieur droit des titres dans la section "photo" sur écrans de grande taille */
@@ -35,7 +35,7 @@ h2 {
   
   /* Styles pour les titres sur écrans de taille moyenne */
   @media (min-width: 850px) {
-    h2 {
+    h1 {
       /* Marge inférieure des titres sur écrans de taille moyenne */
       margin-bottom: 1rem;
     }
