@@ -23,7 +23,7 @@ h1, h2{
     box-shadow: none;
     backdrop-filter: blur(8px);
     border-style: solid;
-    border-color: rgba(5, 66, 128, 0.08);
+    border-color: rgba(194, 224, 255, 0.08);
     border-width: 0px 0px thin;
     background-color: rgba(230, 230, 230, 0.8);
     color: rgb(160, 170, 180);
