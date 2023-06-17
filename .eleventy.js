@@ -49,9 +49,36 @@
   module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/assets");
     eleventyConfig.addPassthroughCopy('./src/admin');
+    eleventyConfig.addPassthroughCopy('./src/_redirects');
+  // get the smallest and biggest image for picture/image attributes
+  let lowsrc = metadata.jpeg[0];
+  let highsrc = metadata.jpeg[metadata.jpeg.length - 1];
 
-    // allows the {% image %} shortcode to be used for optimised iamges (in webp if possible)
-    eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
+  // when {% image ... %} is used, this is what's returned
+  return `<picture class="${className}">
+    ${Object.values(metadata)
+      .map((imageFormat) => {
+        return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat
+          .map((entry) => entry.srcset)
+          .join(', ')}" sizes="${sizes}">`;
+      })
+      .join('\n')}
+      <img
+        src="${lowsrc.url}"
+        width="${highsrc.width}"
+        height="${highsrc.height}"
+        alt="${alt}"
+        loading="${loading}"
+        decoding="async">
+    </picture>`;
+}
+
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("./src/assets");
+  eleventyConfig.addPassthroughCopy('./src/admin');
+  eleventyConfig.addPassthroughCopy('./src/_redirects');
+  // allows the {% image %} shortcode to be used for optimised iamges (in webp if possible)
+  eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
 
 
     return {
