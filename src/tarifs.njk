@@ -1,0 +1,61 @@
+--- 
+description : Explorez les tarifs abordables des services de photographie professionnelle de Charles Cantin, un photographe basé à Paris. Des portraits personnels aux mariages grandioses, nous offrons une gamme de forfaits pour répondre à vos besoins. Profitez de la photographie de qualité supérieure à un prix qui vous convient.
+layout : layout.njk
+title : Tarifs
+styles:
+        - /assets/css/prices.css
+script : "price.js"
+---
+  <div class="container mt-5">
+    <div class="pricetitle row text-center hideleft">
+      <h1>TARIFS</h1>
+      <nav aria-label="breadcrumb">
+        <ul class="breadcrumb justify-content-center">
+          <li class="breadcrumb-item"><a href="{{'/accueil/' | url}}">Accueil</a></li>
+          <li class="breadcrumb-item"><a href="{{'/portfolio/' | url}}">Gallerie</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Tarifs</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- MAINCONTENT -->
+
+  <div class="container-fluid d-flex justify-content-center hideright">
+    <button class="btn btn-prev slide-arrow mx-0" id="slide-arrow-prev">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-left"
+        viewbox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+      </svg>
+    </button>
+    <div class="maincontent row h-100 mx-5 pt-5 ">
+      <div id="slides-container" class="slides-container cardDisplay justify-content-start">
+        {# PRICE CARD #}
+        {%- for price in collections.price -%}
+        <div class="card slide">
+      <img
+        src= {{ price.data.image }}
+        class="card-img-top"
+        alt= {{ price.data.imageAlt }}
+      />
+      <div class="card-body text-center text-center">
+        <h5 class="card-title">{{ price.data.tarif }}</h5>
+        <p class="card-text">
+          {{ price.data.priceDescription }}
+        </p>
+        <a href="/contact/" class="btn">{{ price.data.price }}€ <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+      </svg></a>
+      </div>
+    </div>
+    {%- endfor -%}
+      </div>
+    </div>
+    <button class="btn btn-next slide-arrow mx-0" id="slide-arrow-next">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right"
+        viewbox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+      </svg>
+    </button>
+  </div>
