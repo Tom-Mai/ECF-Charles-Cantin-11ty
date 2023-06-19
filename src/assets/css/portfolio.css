@@ -13,9 +13,17 @@ h1 {
     /* Curseur par défaut pour les titres dans la section "photo" */
     cursor: default;
   }
+  /* button */
+  button{
+    text-transform:capitalize;
+  }
   
   /* Media queries */
-  
+  @media (min-width:500px){
+    button{
+      text-transform:uppercase;
+    }
+  }
   /* Styles pour les titres sur écrans de grande taille */
   @media (min-width: 769px) {
     h1 {
