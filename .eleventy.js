@@ -50,6 +50,7 @@
     eleventyConfig.addPassthroughCopy("./src/assets");
     eleventyConfig.addPassthroughCopy('./src/admin');
     eleventyConfig.addPassthroughCopy('./src/_redirects');
+    eleventyConfig.addPassthroughCopy({ './src/robots.txt': '/robots.txt' });
   // get the smallest and biggest image for picture/image attributes
   let lowsrc = metadata.jpeg[0];
   let highsrc = metadata.jpeg[metadata.jpeg.length - 1];
