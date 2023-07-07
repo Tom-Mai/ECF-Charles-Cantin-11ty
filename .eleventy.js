@@ -80,7 +80,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/_redirects');
   // allows the {% image %} shortcode to be used for optimised iamges (in webp if possible)
   eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
-
+  eleventyConfig.addPassthroughCopy({ './src/robots.txt': '/robots.txt' });
 
     return {
       dir: {
