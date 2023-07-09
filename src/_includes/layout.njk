@@ -17,10 +17,11 @@
 
 {# LINK CSS #}
 {# This style sheet should be placed last in order to have priority #}
-  <link rel="stylesheet" href="{{'/assets/css/main.css' | url }}">
-  {% for css in styles %}
-  <link rel="stylesheet" href="{{css}}">
- {% endfor %}
+  <link rel="preload" href="{{'/assets/css/main.css' | url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+{% for css in styles %}
+<link rel="preload" href="{{css}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+{% endfor %}
+
 {# <link rel="stylesheet" href="{{'/assets/css/main.min.css' | url }}">
 {% for css in styles %}
     <link rel="stylesheet" href="{{css | replace('.css', '.min.css')}}">
