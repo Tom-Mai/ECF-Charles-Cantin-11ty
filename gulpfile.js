@@ -13,13 +13,9 @@ function minifyCss() {
     });
 }
 
-gulp.task('minify-css', minifyCss);
-
 function watch() {
     gulp.watch('src/assets/css/*.css', minifyCss);
 }
-gulp.task('watch', watch);
 
-gulp.task('default', watch);
-
-exports.default = minifyCss;
+exports.default = gulp.series(minifyCss, watch);
+exports.build = minifyCss;
