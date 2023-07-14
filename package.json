@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/Tom-Mai/ECF-Charles-Cantin-11ty#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-navigation": "^0.3.5",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0"
