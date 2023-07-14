@@ -1,5 +1,6 @@
-let gulp = require('gulp');
-let cleanCSS = require('gulp-clean-css');
+const gulp = require('gulp');
+const cleanCSS = require('gulp-clean-css');
+
 
 function minifyCss() {
     return gulp.src('src/assets/css/*.css')
@@ -17,5 +18,6 @@ function watch() {
     gulp.watch('src/assets/css/*.css', minifyCss);
 }
 
-exports.default = gulp.series(minifyCss, watch);
+exports.default = gulp.series(minifyCss);
+// , watch
 exports.build = minifyCss;
